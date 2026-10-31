@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>driftprobe: your API returns 200, your agent still gets garbage</title>
+  <meta name="description" content="Data contract tests for AI agents. driftprobe catches the API or MCP tool that still answers 200 but no longer delivers the data your agent needs. Free and open source.">
+  <link rel="canonical" href="https://driftprobe.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://driftprobe.github.io/">
+  <meta property="og:title" content="Your API returns 200. Your agent still gets garbage.">
+  <meta property="og:description" content="Data contract tests for what your AI agent really receives from APIs and MCP tools. Free and open source.">
+  <meta property="og:image" content="https://driftprobe.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <a class="mark" href="./">driftprobe</a>
+    <nav aria-label="Project links">
+      <a href="#pricing">Pricing</a>
+      <a href="https://www.npmjs.com/package/driftprobe">npm</a>
+      <a href="https://github.com/driftprobe/driftprobe">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Your API returns 200. <em>Your agent still gets garbage.</em></h1>
+      <div class="hero-foot">
+        <p class="lead">driftprobe tests the data your AI agent really receives from APIs and MCP tools. It fails when a source keeps answering while the content quietly degrades.</p>
+        <div class="cta">
+          <button class="copy" type="button" data-copy="npx driftprobe">
+            <span class="copy-text">$ npx driftprobe</span>
+            <span class="copy-state" aria-live="polite">copy</span>
+          </button>
+          <a class="arrow" href="https://github.com/driftprobe/driftprobe">Read the code</a>
+          <p class="fine">Free. MIT. Node 22 or later. No account.</p>
+        </div>
+      </div>
+    </section>
+
+    <figure class="sheet" id="sheet" aria-labelledby="sheet-caption">
+      <div class="rail">
+        <p class="req">GET /products</p>
+        <ul class="checks">
+          <li><span aria-hidden="true">✓</span> 200 OK</li>
+          <li><span aria-hidden="true">✓</span> schema unchanged</li>
+          <li><span aria-hidden="true">✓</span> uptime 100%</li>
+        </ul>
+        <div class="gauge">
+          <span class="gauge-label">items carrying a price</span>
+          <span class="gauge-value" id="gauge">16%</span>
+          <span class="gauge-verdict"><span aria-hidden="true">✕</span> contract: at least 90%</span>
+        </div>
+      </div>
+      <ol class="wall" id="wall" aria-hidden="true"><li class="cell"><span class="v">10</span><span class="n">null</span></li><li class="cell"><span class="v">11</span><span class="n">null</span></li><li class="cell"><span class="v">12</span><span class="n">null</span></li><li class="cell"><span class="v">13</span><span class="n">null</span></li><li class="cell"><span class="v">14</span><span class="n">null</span></li><li class="cell"><span class="v">15</span><span class="n">null</span></li><li class="cell"><span class="v">16</span><span class="n">null</span></li><li class="cell"><span class="v">17</span><span class="n">null</span></li><li class="cell is-null"><span class="v">18</span><span class="n">null</span></li><li class="cell is-null"><span class="v">19</span><span class="n">null</span></li><li class="cell is-null"><span class="v">20</span><span class="n">null</span></li><li class="cell is-null"><span class="v">21</span><span class="n">null</span></li><li class="cell is-null"><span class="v">22</span><span class="n">null</span></li><li class="cell is-null"><span class="v">23</span><span class="n">null</span></li><li class="cell is-null"><span class="v">24</span><span class="n">null</span></li><li class="cell is-null"><span class="v">25</span><span class="n">null</span></li><li class="cell is-null"><span class="v">26</span><span class="n">null</span></li><li class="cell is-null"><span class="v">27</span><span class="n">null</span></li><li class="cell is-null"><span class="v">28</span><span class="n">null</span></li><li class="cell is-null"><span class="v">29</span><span class="n">null</span></li><li class="cell is-null"><span class="v">30</span><span class="n">null</span></li><li class="cell is-null"><span class="v">31</span><span class="n">null</span></li><li class="cell is-null"><span class="v">32</span><span class="n">null</span></li><li class="cell is-null"><span class="v">33</span><span class="n">null</span></li><li class="cell is-null"><span class="v">34</span><span class="n">null</span></li><li class="cell is-null"><span class="v">35</span><span class="n">null</span></li><li class="cell is-null"><span class="v">36</span><span class="n">null</span></li><li class="cell is-null"><span class="v">37</span><span class="n">null</span></li><li class="cell is-null"><span class="v">38</span><span class="n">null</span></li><li class="cell is-null"><span class="v">39</span><span class="n">null</span></li><li class="cell is-null"><span class="v">40</span><span class="n">null</span></li><li class="cell is-null"><span class="v">41</span><span class="n">null</span></li><li class="cell is-null"><span class="v">42</span><span class="n">null</span></li><li class="cell is-null"><span class="v">43</span><span class="n">null</span></li><li class="cell is-null"><span class="v">44</span><span class="n">null</span></li><li class="cell is-null"><span class="v">45</span><span class="n">null</span></li><li class="cell is-null"><span class="v">46</span><span class="n">null</span></li><li class="cell is-null"><span class="v">47</span><span class="n">null</span></li><li class="cell is-null"><span class="v">48</span><span class="n">null</span></li><li class="cell is-null"><span class="v">49</span><span class="n">null</span></li><li class="cell is-null"><span class="v">50</span><span class="n">null</span></li><li class="cell is-null"><span class="v">51</span><span class="n">null</span></li><li class="cell is-null"><span class="v">52</span><span class="n">null</span></li><li class="cell is-null"><span class="v">53</span><span class="n">null</span></li><li class="cell is-null"><span class="v">54</span><span class="n">null</span></li><li class="cell is-null"><span class="v">55</span><span class="n">null</span></li><li class="cell is-null"><span class="v">56</span><span class="n">null</span></li><li class="cell is-null"><span class="v">57</span><span class="n">null</span></li><li class="cell is-null"><span class="v">58</span><span class="n">null</span></li><li class="cell is-null"><span class="v">59</span><span class="n">null</span></li></ol>
+      <p class="verdict" id="verdict">x price: only 16% of 50 items carry a value (contract: at least 90%)</p>
+      <figcaption id="sheet-caption">
+        <span>The same 50 products, same status, same schema. 42 prices become null and nothing else moves. This is the demo API in the repo: you can break it yourself.</span>
+        <button class="replay" id="replay" type="button">Run it again</button>
+      </figcaption>
+    </figure>
+
+    <section class="ledger" aria-labelledby="ledger-title">
+      <h2 id="ledger-title">Every check you have is green.</h2>
+      <table>
+        <thead>
+          <tr><th scope="col">Check</th><th scope="col">Asks</th><th scope="col">Sees</th><th scope="col">Result</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Uptime monitor</th>
+            <td>Did the server answer?</td>
+            <td>200 OK</td>
+            <td class="pass"><span aria-hidden="true">✓</span> pass</td>
+          </tr>
+          <tr>
+            <th scope="row">Schema diff</th>
+            <td>Did the shape change?</td>
+            <td>no field changed</td>
+            <td class="pass"><span aria-hidden="true">✓</span> pass</td>
+          </tr>
+          <tr class="hit">
+            <th scope="row">driftprobe</th>
+            <td>Is the data your agent needs still there?</td>
+            <td>84% of the prices are gone</td>
+            <td class="fail"><span aria-hidden="true">✕</span> fail</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="aside">A person looking at this data would notice the empty column in two seconds. Your agent does not stop. It writes a confident report from what it received, and nobody finds out until a customer does.</p>
+    </section>
+
+    <section class="how" aria-labelledby="how-title">
+      <h2 id="how-title">It learns the contract from your agent’s real calls.</h2>
+      <ol class="steps">
+        <li>
+          <span class="num" aria-hidden="true">1</span>
+          <div>
+            <h3>Record</h3>
+            <p>A local proxy sits between your agent and the source. It forwards everything untouched and writes down the shape of each response. Works on HTTP APIs and on MCP tools, including over server-sent events.</p>
+            <pre><code>driftprobe record --upstream https://api.example.com</code></pre>
+          </div>
+        </li>
+        <li>
+          <span class="num" aria-hidden="true">2</span>
+          <div>
+            <h3>Learn</h3>
+            <p>What was observed becomes a small YAML file in your repo. You do not need the provider’s cooperation.</p>
+            <pre><code>driftprobe learn --observed .driftprobe/observed.jsonl --out-dir contracts
+
+<span class="dim"># contracts/products.yaml</span>
+name: products
+expect:
+  min_items: 25
+  fields:
+    price:      { type: number, min_coverage: 0.9, min_distinct: 2 }
+    updated_at: { type: date, max_age: 3d }</code></pre>
+          </div>
+        </li>
+        <li>
+          <span class="num" aria-hidden="true">3</span>
+          <div>
+            <h3>Check</h3>
+            <p>Run it in CI or on a schedule. It fails with a plain sentence that names the field, and exit code 1 stops the build.</p>
+            <pre><code>$ driftprobe check contracts/*.yaml
+GET /products
+<span class="err">  x price: only 16% of 50 items carry a value (contract: at least 90%)
+  x updated_at: newest value is 289 days old (contract: 3d)</span>
+
+1 contract(s): 0 ok, 1 broken, 0 could not be checked</code></pre>
+            <p class="sub">Or as a GitHub Action: <code>uses: driftprobe/driftprobe@v0</code></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="shapes" aria-labelledby="shapes-title">
+      <h2 id="shapes-title">Shapes, <em>never values.</em></h2>
+      <div class="shapes-text">
+        <p>For each field it keeps how many items carry a value, which types were seen, how many distinct values, and the age of the newest date. The proxy listens on your machine only. Secrets stay in your environment, and a contract only reads variables that start with <code>DRIFTPROBE_</code>, so one you did not write cannot reach the others.</p>
+        <p class="limit"><strong>What it does not do.</strong> It does not know if a value is true, only if it is there, fresh and varied. Field names and route words are kept, so read a contract before you commit it. It learns what your agent receives: narrowing that to what your agent actually reads is manual for now, with <code>--fields name,price</code>.</p>
+      </div>
+    </section>
+
+    <section class="study" aria-labelledby="study-title">
+      <h2 id="study-title">How often does this really happen?</h2>
+      <p class="study-lead">I could not find anyone who has measured it. So I am measuring it, on the official MCP registry.</p>
+      <ol class="stairs">
+        <li><b>53,434</b> servers listed on 31 October 2026</li>
+        <li><b>2,000</b> remote ones sampled, no credential declared, at most 5 per domain</li>
+        <li><b>1,115</b> answered with their tool list</li>
+        <li><b>770</b> declared a read only tool</li>
+        <li><b>415</b> returned data from a read only call</li>
+        <li><b>100</b> real lists, across 98 domains, kept for the study</li>
+      </ol>
+      <p class="study-end">One read only tool on each, twice a day, for 30 days, recording shapes only. Results go out in December whatever they show, including if almost nothing breaks.</p>
+    </section>
+
+    <section class="price" id="pricing" aria-labelledby="price-title">
+      <h2 id="price-title">The tool is free. Being told is what would cost.</h2>
+      <div class="price-grid">
+        <div class="free">
+          <p class="amount">$0</p>
+          <h3>CLI and GitHub Action</h3>
+          <p>MIT licensed, no account. It runs on your machine or in your CI, and you see a break when you look at your build.</p>
+          <a class="arrow" href="https://github.com/driftprobe/driftprobe#try-it">Try it in a minute</a>
+        </div>
+        <div class="paid">
+          <p class="state">Not built yet</p>
+          <p class="amount">$29<small>/month</small></p>
+          <h3>Hosted alerts</h3>
+          <ul>
+            <li>An email or a Slack message the moment a contract breaks.</li>
+            <li>The history of each contract: when it started to degrade, and how fast.</li>
+            <li>An alert when your checks stop reporting, so a dead CI job does not look like good news.</li>
+            <li>Your CI keeps running the checks. The service receives the verdict, never your data or your API keys.</li>
+            <li>No password to manage: pay, receive a key, paste it in your CI. Cancel in one click.</li>
+          </ul>
+          <a class="btn" href="https://github.com/driftprobe/driftprobe/issues/1">I would pay for this</a>
+          <p class="fine">It gets built when enough people ask. The button opens a GitHub issue: give it a 👍 and press Subscribe to hear when it opens.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="end">
+    <p>driftprobe, by bibian. MIT.</p>
+    <p>
+      <a href="https://github.com/driftprobe/driftprobe">GitHub</a>
+      <a href="https://www.npmjs.com/package/driftprobe">npm</a>
+      <a href="https://dev.to/bibian/your-api-returns-200-your-agent-still-gets-garbage-4iok">The article</a>
+    </p>
+    <p>No cookies and no trackers on this page.</p>
+  </footer>
+</body>
+</html>
